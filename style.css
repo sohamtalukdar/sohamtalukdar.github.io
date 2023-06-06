@@ -1,0 +1,75 @@
+body {
+    /* background-image: url("images/MIT-Neural-Networks-01_0.gif"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font: 400 16px/1.5 "Lora",serif;
+  }
+  
+  .center-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    /* font-family: Arial, sans-serif; */
+    color: #424242;
+  }
+  
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    /* mix-blend-mode: multiply; */
+  }
+  
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #424242;
+  }
+  
+  .links a {
+    margin: 0 10px; /* Add some spacing between the links */
+  }
+  
+  a {
+    color: #424242; /* Use your desired color value */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 2s ease-in-out;
+    text-align: center;
+    color: #424242;
+  }
+  
+  .box {
+    width: 500px;
+    height: 250px;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, 0.5);  */
+  }
+  
