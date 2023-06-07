@@ -1,9 +1,14 @@
 body {
-    /* background-image: url("images/MIT-Neural-Networks-01_0.gif"); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    font: 400 16px/1.5 "Lora",serif;
-  }
+  font: 400 16px/1.5 "Lora",serif;
+  color: #111;
+  background-color: #fdfdfd;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
   
   .center-heading {
     display: flex;
@@ -42,7 +47,7 @@ body {
   a {
     color: #424242; /* Use your desired color value */
   }
-  
+/*   
   @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -57,11 +62,10 @@ body {
     text-align: center;
     color: #424242;
   }
-  
-  .box {
+   */
+  /* .box {
     width: 500px;
     height: 250px;
-    /* background-color: rgba(255, 255, 255, 0.5); */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -70,6 +74,22 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* background-color: rgba(0, 0, 0, 0.5);  */
-  }
+  } */
+
+.page-content {
+    padding: 30px 0;
+}
+
+.wrapper {
+  max-width: -webkit-calc(800px - (30px * 2));
+  max-width: calc(800px - (30px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.post-header {
+  margin-bottom: 30px;
+}
   
