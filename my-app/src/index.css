@@ -1,0 +1,40 @@
+/* Global reset and base styles */
+html, body {
+    font: 400 16px/1.5 "Lora", serif;
+    color: #111;
+    background-color: #fdfdfd;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+  }
+
+/* Global link styles */
+a {
+color: #2a7ae2;
+text-decoration: none;
+}
+
+a:visited {
+color: #1756a9;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+/* Utility classes (if needed) */
+.text-center {
+text-align: center;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+body {
+    font-size: 14px;
+}
+
+/* Add any other responsive styles as needed */
+}
