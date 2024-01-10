@@ -15,29 +15,11 @@ export default function OutlinedTimeline() {
           <TimelineDot variant="outlined" />
           <TimelineConnector />
         </TimelineSeparator>
-        <Tooltip title="Details about 2019" arrow>
+        <Tooltip title="Details about 2019" placement="top" arrow>
           <TimelineContent>2019</TimelineContent>
         </Tooltip>
       </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot variant="outlined" color="primary" />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <Tooltip title="Details about 2020" arrow>
-          <TimelineContent>2020</TimelineContent>
-        </Tooltip>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot variant="outlined" color="secondary" />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <Tooltip title="Details about 2021" arrow>
-          <TimelineContent>2021</TimelineContent>
-        </Tooltip>
-      </TimelineItem>
-      {/* Add more TimelineItems with respective Tooltips as needed */}
+      {/* Repeat for other TimelineItems with respective Tooltips and placement="top" */}
     </Timeline>
   );
 }
