@@ -6,6 +6,7 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Tooltip from '@mui/material/Tooltip';
+import Typography from '@mui/material/Typography';
 
 export default function OutlinedTimeline() {
   return (
@@ -15,11 +16,21 @@ export default function OutlinedTimeline() {
           <TimelineDot variant="outlined" />
           <TimelineConnector />
         </TimelineSeparator>
-        <Tooltip title="Details about 2019" placement="top" arrow>
+        <Tooltip 
+          title={
+            <React.Fragment>
+              <Typography color="inherit">2019 Highlights</Typography>
+              <p>Here are the major events of 2019...</p>
+            </React.Fragment>
+          }
+          enterDelay={500} 
+          leaveDelay={200} 
+          placement="top"
+        >
           <TimelineContent>2019</TimelineContent>
         </Tooltip>
       </TimelineItem>
-      {/* Repeat for other TimelineItems with respective Tooltips and placement="top" */}
+      {/* Repeat for other TimelineItems with respective Tooltips */}
     </Timeline>
   );
 }
