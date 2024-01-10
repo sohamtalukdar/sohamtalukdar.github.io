@@ -5,6 +5,7 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
+import Tooltip from '@mui/material/Tooltip';
 
 export default function OutlinedTimeline() {
   return (
@@ -14,37 +15,29 @@ export default function OutlinedTimeline() {
           <TimelineDot variant="outlined" />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>2019</TimelineContent>
+        <Tooltip title="Details about 2019" arrow>
+          <TimelineContent>2019</TimelineContent>
+        </Tooltip>
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot variant="outlined" color="primary" />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>2020</TimelineContent>
+        <Tooltip title="Details about 2020" arrow>
+          <TimelineContent>2020</TimelineContent>
+        </Tooltip>
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot variant="outlined" color="secondary" />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>2021</TimelineContent>
+        <Tooltip title="Details about 2021" arrow>
+          <TimelineContent>2021</TimelineContent>
+        </Tooltip>
       </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot variant="outlined"  color="secondary"/>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>2023</TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot variant="outlined" color="secondary"/>
-          <TimelineConnector />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>2019</TimelineContent>
-      </TimelineItem>
+      {/* Add more TimelineItems with respective Tooltips as needed */}
     </Timeline>
   );
 }
