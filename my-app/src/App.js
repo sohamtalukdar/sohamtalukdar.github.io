@@ -1,13 +1,22 @@
 import React from 'react';
-import OutlinedTimeline from './OutlinedTimeline'; // Adjust the path if needed
 import './App.css';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'; 
 
 function App() {
   return (
     <div className="App">
       <header className="site-header" role="banner">
         <div className="wrapper">
-          <a className="site-title" href="/">Soham Talukdar</a>
+          <div className="header-content"> 
+            <a className="site-title" href="/">Soham Talukdar</a>
+            <div className="contact-info"> 
+              <div className="social-icons">
+                <a href="https://github.com/sohamtalukdar" target="_blank" rel="noopener noreferrer"><FaGithub /></a> 
+                <a href="https://www.linkedin.com/in/soham-talukdar" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                <a href="mailto:sohamt09@gmail.com"><FaEnvelope /></a> 
+              </div>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -21,13 +30,12 @@ function App() {
             
               <p>Continuing my professional growth, I am currently engrossed in mastering JAX and JavaScript. These pursuits demonstrate my commitment to staying abreast of emerging technologies and further refining my skill set. By embracing these frameworks, I aim to unlock new avenues for innovation and contribute to the dynamic landscape of technology.
               </p>
-              </div>
+            </div>
           </article>
         </section>
       </main>
-      <footer className="timeline-footer">
-        <OutlinedTimeline />
-      </footer>
+
+      {/* Removed the timeline footer */}
     </div>
   );
 }
