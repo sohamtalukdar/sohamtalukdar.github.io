@@ -10,11 +10,38 @@ body {
   font-kerning: normal;
 }
 
+.contact-info {
+  display: flex; /* Enable Flexbox for horizontal alignment */
+  justify-content: flex-end; /* Push items to the end (right) of the container */
+}
 .site-header {
   border-bottom: 1px solid #e8e8e8;
   min-height: 55.95px;
   position: relative;
 }
+
+
+.social-icons {
+  margin-left: auto;  
+  margin-right: 2rem; 
+}
+ 
+.social-icons a {
+  margin-left: 1rem;      /* Add spacing between icons */
+  font-size: 1.2rem;
+  color: #424242;      /* Set icon color to match the heading */
+  transition: color 0.2s ease; 
+}
+
+.social-icons a:hover {
+  color: #2a7ae2; /* This is your hover color */
+}
+
+/* Add this style to override default active state */
+.social-icons a:active {
+  color: #424242; /* This is your unvisited link color */
+}
+
 
 .wrapper {
   max-width: calc(800px - (30px * 2));
@@ -123,3 +150,5 @@ a {
   padding: 20px; /* Add some padding */
   margin-top: auto; /* Push to the bottom if inside a flex container */
 }
+
+
