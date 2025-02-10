@@ -30,10 +30,12 @@ body {
 /* Use Flexbox to align title and icons in one line */
 .header-content {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline; /* Ensures all elements align properly */
-  padding: 0 20px;
+  justify-content: flex-start; /* Aligns items to the left */
+  align-items: center;
+  padding: 0;
 }
+
+
 
 .nav-links {
   margin-left: auto; /* Pushes CV and Readings to the right */
@@ -48,6 +50,15 @@ body {
   line-height: 54px;
   margin-bottom: 0;
   /* Remove float since Flexbox is handling alignment */
+}
+
+.site-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Aligns the title to the left */
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 
 /* Contact Info and Social Icons */
