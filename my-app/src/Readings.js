@@ -9,7 +9,7 @@ function Readings() {
         <h4>A Curated list of readings that I found helpful overtime</h4>
         <ul>
 
-            <li>Operating Systems: Three Easy Pieces : Chapter 1.2</li>
+            <li>Operating Systems: Three Easy Pieces : Chapter 1.2, 2.3</li>
             </ul>
 
         </section>
