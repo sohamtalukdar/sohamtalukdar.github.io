@@ -1,0 +1,177 @@
+/* App.css */
+
+body {
+  font: 400 16px/1.5 "Lora", serif;
+  color: #111;
+  background-color: #fdfdfd;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
+
+.wrapper {
+  max-width: calc(800px - (30px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+/* Header Styles */
+.site-header {
+  border-bottom: 1px solid #e8e8e8;
+  min-height: 55.95px;
+  position: relative;
+}
+
+/* Use Flexbox to align title and icons in one line */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline; /* Ensures all elements align properly */
+  padding: 0 20px;
+}
+
+.nav-links {
+  margin-left: auto; /* Pushes CV and Readings to the right */
+  display: flex;
+  gap: 20px;
+}
+
+.site-title, .site-title:visited {
+  color: #424242;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 54px;
+  margin-bottom: 0;
+  /* Remove float since Flexbox is handling alignment */
+}
+
+/* Contact Info and Social Icons */
+.contact-info {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center; /* Ensures icons align with the text */
+  margin-left: auto;
+}
+
+.social-icons a {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  color: #424242;
+  transition: color 0.2s ease;
+}
+
+.social-icons a:hover {
+  color: #2a7ae2;
+}
+
+/* Override active state if necessary */
+.social-icons a:active {
+  color: #424242;
+}
+
+a {
+  color: #2a7ae2;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1756a9;
+}
+
+/* Main Content Styles */
+.page-content {
+  padding: 30px 0;
+}
+
+.post-content img {
+  float: right;
+  width: 250px;
+  height: 250px;
+  margin: 0 0 1em 2em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Additional styles for timeline (if needed) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #ddd;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container.left {
+  left: 0;
+}
+
+.container.right {
+  left: 50%;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+.content:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .container.right {
+    left: 0%;
+  }
+}
+
+.timeline-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: auto;
+}
+
+.header-nav a,
+.header-nav a:visited {
+  color: #111;
+}
+
+a, a:visited {
+  color: #424242; /* Match Soham Talukdar's color */
+  text-decoration: none;
+}
