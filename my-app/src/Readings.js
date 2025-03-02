@@ -6,10 +6,11 @@ function Readings() {
     <main className="page-content">
         <section className="wrapper">
         <h1>Readings</h1>
-        <h4>A Curated list of readings that I found helpful overtime</h4>
+        <h4>A Curated list of readings that I found helpful:</h4>
         <ul>
 
-            <li>Operating Systems: Three Easy Pieces : Chapter 1.2, 1.6</li>
+        <li><a href="https://lilianweng.github.io/posts/2021-09-25-train-large/">How to Train Really Large Models on Many GPUs?</a></li>
+
             </ul>
 
         </section>
