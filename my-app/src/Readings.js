@@ -10,6 +10,7 @@ function Readings() {
         <ul>
 
         <li><a href="https://lilianweng.github.io/posts/2021-09-25-train-large/">How to Train Really Large Models on Many GPUs?</a></li>
+        <li><a href="https://people.freebsd.org/~lstewart/articles/cpumemory.pdf">What Every Programmer Should Know About Memory</a></li>
 
             </ul>
 
